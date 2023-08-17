@@ -11,3 +11,14 @@ Babel transpiles JSX into "real" JavaScript, which then renders onto the page.
 Typically, the top level component of your application is "App". All the components
 that you create will eventually be rendered as one, conventionally called "App".
 The App component is renders inside the "root" div in the HTML.
+
+## Creating Components
+```
+function Header() {
+    return <h1>Header Component</h1>
+}
+```
+Render a component by calling it as if it was an HTML element.
+```
+<Header/>
+```
