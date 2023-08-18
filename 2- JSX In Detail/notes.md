@@ -25,3 +25,17 @@ Using this method, to import you would write
 import {Greeter} from "./Greeter.js"
 ```
 
+## JSX Rules
+
+You must explicitly close self-closing tags like <br/>
+Components can only return a single element.
+
+## React Fragment
+
+If you don't want a wrapper element like a div or a form but you want a component to have multiple elements, you can wrap it in a react fragment.
+```
+<>
+    <h1>Hello World</h1>
+    <h2>H2</h2>
+</>
+```
