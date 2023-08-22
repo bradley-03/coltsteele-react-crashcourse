@@ -49,3 +49,13 @@ export default function Greeter() {
     return <h1>Hello, {name}!</h1>; // renders as "Hello, John!"
 } 
 ```
+
+## Styling Components in React
+
+The conventional way of styling React is to give your top element a class that matches the name of the component. Class is a reserved word in Javascript so instead you add the class with className.
+```
+export default function Greeter() {
+  return <h1 className="Greeter">Hello!</h1>;
+}
+```
+Create a css file matching the name of your component, and import it to the component file. The scope is not limited to just the component, so any component with the same className can also use these styles.
