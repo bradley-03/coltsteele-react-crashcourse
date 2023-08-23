@@ -23,3 +23,9 @@ When destructuring, add an = to your variable to set the default value.
 ```
 export default function Die ({sides=6}) {
 ```
+
+## Conditionals
+If you want something to render based on a condition, you can use a turnary operator like this.
+```
+{num1 === num2 && <h3>You Win!</h3>}
+```
