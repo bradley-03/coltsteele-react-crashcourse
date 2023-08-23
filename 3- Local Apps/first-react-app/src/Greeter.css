@@ -1,0 +1,7 @@
+.Greeter {
+    transition: 0.7s;
+}
+
+.Greeter:hover {
+    transform: scale(1.2) rotate(4deg);
+}
