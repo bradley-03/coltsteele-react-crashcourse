@@ -15,6 +15,7 @@ export default function Greeter (props) {
 To pass non-string props you simply surround your value with {}
 ```
 <Die sides={20} />
+<ListPicker list={["red", "green", "blue", "yellow"]} />
 ```
 
 ## Default Prop Values
