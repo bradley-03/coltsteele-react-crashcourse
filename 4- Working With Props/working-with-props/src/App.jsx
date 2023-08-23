@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Greeter from './Greeter.jsx'
+import Die from './Die.jsx'
 import './App.css'
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
 	return (
 		<div>
 			<Greeter name="Bill" />
+			<Die/>
 		</div>
   	)
 }

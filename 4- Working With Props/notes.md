@@ -10,3 +10,15 @@ export default function Greeter (props) {
     return <h1 className="Greeter">Hello, {props.name}!</h1>
 }
 ```
+
+## Non-String Props
+To pass non-string props you simply surround your value with {}
+```
+<Die sides={20} />
+```
+
+## Default Prop Values
+When destructuring, add an = to your variable to set the default value.
+```
+export default function Die ({sides=6}) {
+```
