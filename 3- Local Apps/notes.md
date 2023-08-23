@@ -1,6 +1,6 @@
 ## Vite 
-https://vitejs.dev/
-Vite is used to quickly create React apps locally.
+
+[Vite](https://vitejs.dev/) is used to quickly create React apps locally.
 To create an app, all you need to do it run one command and follow the setup process.
 ```
 npm create vite@latest
