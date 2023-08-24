@@ -29,3 +29,10 @@ If you want something to render based on a condition, you can use a turnary oper
 ```
 {num1 === num2 && <h3>You Win!</h3>}
 ```
+
+## Dynamic Styles
+You can pass your dynamic styles as an object using the same turnary operator logic as conditionals.
+```
+const styles = {color: isWinner ? "green" : "red"}
+<div style={styles}>
+```
