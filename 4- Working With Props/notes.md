@@ -36,3 +36,12 @@ You can pass your dynamic styles as an object using the same turnary operator lo
 const styles = {color: isWinner ? "green" : "red"}
 <div style={styles}>
 ```
+
+## Rendering Arrays with Map
+You can use the map method to turn an array into multiple LIs that can be rendered into a UL.
+```
+<p>Colour List</p>
+<ul>
+    {colours.map(c => <li style={{color: c}}>{c}</li>)}
+</ul>
+```
