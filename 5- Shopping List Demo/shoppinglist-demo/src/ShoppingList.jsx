@@ -1,4 +1,5 @@
 import ShoppingListItem from "./ShoppingListItem"
+import PropTypes from "prop-types"
 
 export default function ShoppingList({ items }) {
     return (
@@ -6,4 +7,8 @@ export default function ShoppingList({ items }) {
             {items.map(i => <ShoppingListItem key={i.id} item={i} />)}
         </ul>
     )
+}
+
+ShoppingList.propTypes = {
+    items: PropTypes.object
 }
