@@ -36,3 +36,7 @@ export default function Clicker () {
     )
 }
 ```
+
+## Non-Click Events
+Events in react should be Camel Cased. For example, onmouseover becomes onMouseOver.
+List of events can be found [here](https://developer.mozilla.org/en-US/docs/Web/Events)
