@@ -20,3 +20,19 @@ ShoppingList.propTypes = {
 }
 ```
 All proptypes can be found [here](https://legacy.reactjs.org/docs/typechecking-with-proptypes.html)
+
+## Click Events
+You connect click events to functions inline.
+```
+function handleClick () {
+    console.log("Button Clicked!")
+}
+
+export default function Clicker () {
+    return (
+        <div>
+            <button onClick={handleClick}>Click Me</button>
+        </div>
+    )
+}
+```
