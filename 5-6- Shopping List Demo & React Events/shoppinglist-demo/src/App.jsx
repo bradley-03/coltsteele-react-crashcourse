@@ -2,6 +2,7 @@ import './App.css'
 import ShoppingList from './ShoppingList'
 import PropertyList from './PropertyList'
 import Clicker from './Clicker'
+import Form from './Form'
 
 const data = [
 	{id: 1, item: 'eggs', quantity: 12, completed: false},
@@ -24,7 +25,8 @@ function App() {
     <div>
 		{/* <ShoppingList items={data} /> */}
 		{/* <PropertyList properties={properties} /> */}
-		<Clicker />
+		<Form/ >
+		<Clicker message="Alert" buttonText="Alert Button" />
     </div>
   )
 }
