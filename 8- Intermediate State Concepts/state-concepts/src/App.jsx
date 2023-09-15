@@ -1,5 +1,6 @@
 import Counter from './Counter'
 import Dumbo from './Dumbo'
+import ScoreKeeper from './ScoreKeeper'
 import './App.css'
 
 function App() {
@@ -7,7 +8,8 @@ function App() {
 		<>
 			<h1>State Demo</h1>
 			{/* <Counter/> */}
-			<Dumbo/>
+			{/* <Dumbo/> */}
+			<ScoreKeeper/>
 		</>
 	)
 }
