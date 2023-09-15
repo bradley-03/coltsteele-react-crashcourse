@@ -9,10 +9,19 @@ const increaseCount3 = () => {
 ```
 
 ## Working with Objects in State
-Objects / arrays need to be copied to a new object or the component will not re-render as the object is the same.
+Objects need to be copied to a new object or the component will not re-render as the object is the same.
 ```
 const [scores, setScore] = useState({player1: 0, player2: 0})
 const addP1 = () => {
     setScore(oldScores => {return {...oldScores, player1: oldScores.player1+1}})
 }
+```
+
+## Arrays In State
+Similarly to objects, the best way to update an array is to use the spread operator to create a copy.
+```
+const [emojis, setEmojis] = useState(["🙂"])
+const addEmoji = () => {
+    setEmojis(oldEmojis => [...oldEmojis, "🙂"])
+} 
 ```
