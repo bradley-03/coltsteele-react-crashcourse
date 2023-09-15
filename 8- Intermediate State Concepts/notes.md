@@ -25,3 +25,17 @@ const addEmoji = () => {
     setEmojis(oldEmojis => [...oldEmojis, "🙂"])
 } 
 ```
+
+## Passing Arguments to Functions in onClick
+To pass an argument to a function through you need to provide a function to the object.
+```
+onClick={()=> deleteEmoji(e.id)}
+```
+
+## Deleting from Arrays in React
+The best way to delete from an array is to use the filter method to filter out a single element:
+```
+const deleteEmoji = (id) => {
+    setEmojis(oldEmojis => oldEmojis.filter(e => e.id !== id))
+}
+```
