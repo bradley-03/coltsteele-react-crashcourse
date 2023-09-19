@@ -2,6 +2,7 @@ import Counter from './Counter'
 import Dumbo from './Dumbo'
 import ScoreKeeper from './ScoreKeeper'
 import EmojiClicker from './EmojiClicker'
+import ScoreKeeperNew from './ScoreKeeperNew'
 import './App.css'
 
 function App() {
@@ -11,7 +12,8 @@ function App() {
 			{/* <Counter/> */}
 			{/* <Dumbo/> */}
 			{/* <ScoreKeeper/> */}
-			<EmojiClicker/>
+			{/* <EmojiClicker/> */}
+			<ScoreKeeperNew players={4} />
 		</>
 	)
 }
