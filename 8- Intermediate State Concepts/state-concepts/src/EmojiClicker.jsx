@@ -14,6 +14,15 @@ export default function EmojiClicker () {
     const deleteEmoji = (id) => {
         setEmojis(oldEmojis => oldEmojis.filter(e => e.id !== id))
     }
+
+    const makeHearts = () => {
+        setEmojis(oldEmojis => oldEmojis.map((e) => {
+            return {
+                ...e,
+                emoji: "❤️"
+            }
+        }))
+    }
     
     return (
         <div>
@@ -22,6 +31,7 @@ export default function EmojiClicker () {
             </p>
             
             <button onClick={addEmoji}>Add Emoji</button>
+            <button onClick={makeHearts}>❤️</button>
         </div>
     )
 }
