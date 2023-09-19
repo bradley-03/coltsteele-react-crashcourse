@@ -22,7 +22,7 @@ export default function ScoreKeeperNew ({players=2, target=3}) {
                 {scores.map((p, i) => <li key={i}>
                     Player{i + 1} : {p}
                     <button onClick={() => addPoint(i)}>+1</button>
-                    {p >= target ? "WINNER!" : ""}
+                    {p >= target && "WINNER!"}
                 </li>)}
             </ul>
             
