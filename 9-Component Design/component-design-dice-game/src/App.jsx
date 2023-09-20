@@ -1,5 +1,6 @@
 import LuckyN from "./LuckyN";
 import {sum} from './utils'
+import BoxGrid from "./BoxGrid";
 
 function lessThan4 (rolls) {
 	return sum(rolls) < 4
@@ -12,8 +13,10 @@ function sameNumbers (rolls) {
 function App() {
 	return (
 		<>
-			<LuckyN title="Same Numbers" numDice={3} winCheck={sameNumbers} />
-			<LuckyN title="Less than 4" numDice={2} winCheck={lessThan4} />
+			{/* <LuckyN title="Same Numbers" numDice={3} winCheck={sameNumbers} />
+			<LuckyN title="Less than 4" numDice={2} winCheck={lessThan4} /> */}
+			<BoxGrid />
+
 		</>
 	);
 }
