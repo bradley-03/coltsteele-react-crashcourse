@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { getRolls, sum } from "./utils";
 import "./Lucky7.css";
-import Die from './Die.jsx'
 import Dice from "./Dice.jsx";
 
 function Lucky7() {
