@@ -1,5 +1,4 @@
 import Box from "./Box";
-import './BoxGrid.css'
 import { useState } from "react";
 
 export default function BoxGrid ({numBoxes=9}) {
