@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { getRolls } from './utils'
 import Dice from "./Dice";
+import Button from "./Button";
 import './LuckyN.css'
 
 export default function LuckyN ({title="Dice Game", numDice=2, winCheck}) {
@@ -15,7 +16,7 @@ export default function LuckyN ({title="Dice Game", numDice=2, winCheck}) {
         <div className="LuckyN">
             <h1>{title} {isWinner && "| You Win!"}</h1>
             <Dice dice={rolls} />
-            <button onClick={rerollDice}>Re-Roll</button>
+            <Button text="Re-Roll" onClick={rerollDice} />
         </div>
     )
 }
