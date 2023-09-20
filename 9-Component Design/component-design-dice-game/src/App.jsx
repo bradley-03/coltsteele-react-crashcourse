@@ -1,9 +1,10 @@
-import Lucky7 from "./Lucky7";
+import LuckyN from "./LuckyN";
 
 function App() {
 	return (
 		<>
-			<Lucky7/>
+			<LuckyN goal={9} />
+			<LuckyN numDice={3} goal={11} />
 		</>
 	);
 }

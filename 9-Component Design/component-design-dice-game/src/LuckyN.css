@@ -1,0 +1,16 @@
+.LuckyN {
+    text-align: center;
+}
+
+.LuckyN button {
+    background-color: crimson;
+    padding: 10px 40px;
+    border-radius: 25px;
+    color: white;
+    font-size: 2rem;
+    border: none;
+    transition: 0.3s;
+}
+.LuckyN button:hover {
+    background-color: firebrick;
+}
