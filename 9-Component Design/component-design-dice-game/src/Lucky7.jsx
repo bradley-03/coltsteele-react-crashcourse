@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { getRolls, sum } from "./utils";
 import "./Lucky7.css";
+import Die from './Die.jsx'
 
 function Lucky7() {
 	const [dice, setDice] = useState(getRolls(2));
@@ -14,8 +15,8 @@ function Lucky7() {
 		<main className="Lucky7">
 			<h1>Lucky7 {won && "You won!"}</h1>
 			<section className="Lucky7-dice">
-				<div className="Lucky7-die">{dice[0]}</div>
-				<div className="Lucky7-die">{dice[1]}</div>
+				<Die value={dice[0]}/>
+				<Die value={dice[1]}/>
 			</section>
 			<button onClick={roll}>Roll Again!</button>
 		</main>
