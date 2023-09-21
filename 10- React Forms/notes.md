@@ -22,3 +22,23 @@ export default function UsernameForm () {
 ```
 <label htmlFor="username">Username: </label>
 ```
+
+## Multiple Inputs
+For multiple inputs, you can use an object to keep track of all your form data, and write your function to get the specific input name and value, which you can use to update the state.
+```
+const [formData, setFormData] = useState({firstName: "", lastName: ""})
+
+const handleChange = (event) => {
+    const fieldName = event.target.name
+    const value = event.target.value
+
+    setFormData(oldData => {
+        return {...oldData, [fieldName]: value}
+    })
+}
+```
+Example of what an input would look like with this code:
+```
+<input name="firstName" id="firstname" type="text" placeholder="First name" value={formData.firstName} onChange={handleChange} />
+```
+Naming each form field is required for this method, and must match the name of the object field.
