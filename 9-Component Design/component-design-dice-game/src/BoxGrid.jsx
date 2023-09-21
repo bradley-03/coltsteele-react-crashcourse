@@ -16,7 +16,7 @@ export default function BoxGrid ({numBoxes=9}) {
 
     return (
         <div className="BoxGrid">
-            {boxes.map((v, i) => <Box key={i} isActive={v} onClick={() => toggleBox(i)} />)}
+            {boxes.map((v, i) => <Box key={i} isActive={v} clickFunc={() => toggleBox(i)} />)}
             <button onClick={resetBoxes}>Reset</button>
         </div>
     )
