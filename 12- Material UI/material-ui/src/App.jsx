@@ -2,6 +2,7 @@ import './App.css'
 import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import DeleteIcon from '@mui/icons-material/Delete';
+import RatingDemo from './RatingDemo';
 
 function App() {
 	return (
@@ -13,6 +14,7 @@ function App() {
 			<IconButton aria-label="delete" color="primary">
 				<DeleteIcon />
 			</IconButton>
+			<RatingDemo/>
 		</>
 	)
 }
