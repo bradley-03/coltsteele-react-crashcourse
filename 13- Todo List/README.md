@@ -1,8 +1,21 @@
-# React + Vite
+## Local Storage
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+useEffect will update when the todos array changes, so you can save the new data to localstorage.
+```
+useEffect(() => {
+    localStorage.setItem(
+        'todos',
+        JSON.stringify(todos)
+    )
+}, [todos])
+```
+Then initialize the localStorage with a simple function.
+```
+const initData = () => {
+    const data = JSON.parse(localStorage.getItem("todos"))
+    if (!data) return []
+    return data
+}
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+const [todos, setTodos] = useState(initData)
+```
