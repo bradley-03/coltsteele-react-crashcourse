@@ -1,4 +1,4 @@
-# learning-react
+# coltsteele-react-crashcourse 
 My code from sections 60-73 of "[The Web Development Bootcamp](https://www.udemy.com/course/the-web-developer-bootcamp)" UDemy course.
 
 # codesandbox
