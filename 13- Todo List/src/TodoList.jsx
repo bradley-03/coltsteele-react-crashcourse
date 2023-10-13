@@ -3,6 +3,8 @@ import List from '@mui/material/List';
 import TodoItem from './TodoItem';
 import TodoForm from './TodoForm';
 import { useEffect } from 'react';
+import Box from "@mui/material/Box"
+import Typography from "@mui/material/Typography"
 
 // const initialTodos = [
 //     { id: 1, text: 'Walk the Dog', completed: false },
@@ -50,8 +52,15 @@ export default function TodoList() {
     }
 
     return (
-        <div>
-            <h1>Todo List</h1>
+        <Box sx={{
+            display: "flex",
+            alignItems:"center", 
+            justifyContent: "center", 
+            textAlign: "center", 
+            flexDirection: "column",
+            mt: 3
+        }}>
+            <Typography variant="h2">Todo List</Typography>
             <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
                 {todos.length === 0 && <h2>No Todos Yet!</h2>}
                 {todos.map(todo => (
@@ -59,7 +68,7 @@ export default function TodoList() {
                 ))}
                 <TodoForm submit={addTodo} />
             </List>
-        </div>
+        </Box>
 
     )
 }
