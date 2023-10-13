@@ -2,7 +2,6 @@ import { useState } from 'react';
 import List from '@mui/material/List';
 import TodoItem from './TodoItem';
 import TodoForm from './TodoForm';
-import { v4 as uuidv4 } from 'uuid'
 import { useEffect } from 'react';
 
 // const initialTodos = [
@@ -46,7 +45,7 @@ export default function TodoList() {
     }
     const addTodo = (text) => {
         setTodos(prevTodos => {
-            return [...prevTodos, {id: uuidv4(), text: text, completed: false}]
+            return [...prevTodos, {id: crypto.randomUUID(), text: text, completed: false}]
         })
     }
 
